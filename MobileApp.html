@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Mobile App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: #6200ea;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      background: #6200ea;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #3700b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0.75rem;
+      background: #eee;
+      font-size: 0.8rem;
+    }
+
+    #message {
+      margin-top: 1rem;
+      color: #333;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>My Mobile App</h1>
+    </header>
+
+    <main>
+      <p>Welcome to your mobile app built with HTML, CSS, and JavaScript!</p>
+      <button id="clickMe">Tap Me 👆</button>
+      <p id="message"></p>
+    </main>
+
+    <footer>
+      <small>© 2025 MyApp</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("clickMe").addEventListener("click", () => {
+      const message = document.getElementById("message");
+      message.textContent = "You tapped the button! 🎉";
+    });
+  </script>
+</body>
+</html>
